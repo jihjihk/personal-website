@@ -9,13 +9,14 @@ var allWriting = require('./public/text/writing-posts.json');
 var allProjects = require('./public/text/project-posts.json');
 
 app.set("view engine", "pug");
-app.set("views", path.join(__dirname, "public/views"));
-
-app.use(favicon(path.join(__dirname, "public", 'favicon.ico')));
+app.set("views", path.join(__dirname, 'public/views'));
 
 app.listen(process.env.PORT || 8005, function() {
 	console.log("We have started the server");
 });
+
+app.use(favicon(path.join(__dirname,'public','favicon.ico')));
+//app.use('/favicon.ico', express.static('public/favicon.ico'));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
