@@ -10,7 +10,7 @@ var allProjects = require('./public/text/project-posts.json');
 app.set("view engine", "pug");
 app.set("views", path.join(__dirname, "public/views"));
 
-app.listen(5000, function() {
+app.listen(process.env.PORT || 8005, function() {
 	console.log("We have started the server");
 });
 
