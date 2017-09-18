@@ -1,0 +1,18 @@
+extends layout.pug
+
+block link
+  -var selected = 'writing';
+
+block content
+  .col-lg-10.col-md-11.ml-3
+    .page-header
+      h1
+        | Writings on 
+        a(href='https://github.com/pierredepaz/politics-of-code') Politics of Code
+    hr
+    each writing in allWriting
+      .post-preview
+        a(href= '/writing/'+writing.week)
+          h2.post-title= writing.title
+          h3.post-subtitle= writing.subtitle
+        p.post-meta= writing.date

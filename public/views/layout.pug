@@ -1,0 +1,52 @@
+doctype html
+html(lang='en')
+	block link
+		-var selected = 'home';
+	-var menu = {'home' : '/', 'writing' : '/writing', 'projects': '/projects', 'about': '/about'};
+
+	head
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+		meta(name='description', content="Jihyun's website")
+		meta(name='author', content='Jihyun Kim')
+		title= title
+		// Bootstrap core CSS
+		link(href='../vendor/bootstrap.min.css', rel='stylesheet')
+		// Custom styles for this template
+		link(href='../css/style.css', rel='stylesheet')
+		link(href='https://fonts.googleapis.com/css?family=Nunito:300,400,700|Open+Sans:400,700', rel='stylesheet')
+		link(href='https://fonts.googleapis.com/css?family=Lora:400,700', rel='stylesheet')
+		link(rel='stylesheet', href='https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css')
+	body
+		#wrapper.toggled
+			// Sidebar
+			#sidebar-wrapper
+				ul.sidebar-nav.mt-5
+					each val, key in menu
+							if selected === key
+								li.active-page
+									a(href=val, title=key)= key
+							else
+								li
+									a(href=val, title=key)= key
+
+					li.sidebar-brand
+						a#sidebar-name(href='/')
+							| Jihyun Kim
+					li.list-inline-item.ml-3
+						a.sociali(href='https://twitter.com/jihjihk')
+							span.fa-stack.fa-lg
+								i.fa.fa-twitter.fa-stack-1x
+					li.list-inline-item
+						a.sociali(href='https://github.com/jihjihk')
+							span.fa-stack.fa-lg
+								i.fa.fa-github.fa-stack-1x
+
+			#page-content-wrapper
+				.container
+					.row
+						block content
+			block article
+
+		script(src='vendor/jquery.min.js')
+		script(src='vendor/bootstrap.min.js')

@@ -1,0 +1,11 @@
+{
+	"week2": 
+	{
+		"week" : "week2",
+		"title" : "The Intervening Bystander App",
+		"subtitle" : "Using software to improve campus safety",
+		"date" : "September 11, 2017",
+		"image" : "https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fassets.entrepreneur.com%2Fcontent%2F16x9%2F822%2F20160914102048-NYUAD.jpeg&f=1",
+		"text" : "<h2 class='post-subheading'>Problem</h2> <p>NYUAD is a small and tight-knit community of a little over 1,000 students. We know most of the students’ faces as interactions are inevitable at this condensed and communal campus. This lack of anonymity guarantees a certain level of safety on campus because harassment and crime committed by strangers, common at other GNU campuses in city centers, are mostly absent. Yet this small size of student body alone does not guarantee safety. The different legal standards in this country also makes it hard to handle certain offenses.</p> <h2 class='post-subheading'>Solution</h2> <p>Prevention effort, therefore, might be the most effective. <a href='http://psychology.wikia.com/wiki/Bystander_intervention']>The Bystander Intervention</a> is known as a very effective prevention strategy that involves the crowd as an intervening force before the crime actually happens. I want to build an app that allows anonymous reporting of a situation that may escalate to be harmful.</p>"
+	}
+}

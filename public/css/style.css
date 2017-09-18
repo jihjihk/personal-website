@@ -1,0 +1,267 @@
+/*!
+ * Start Bootstrap - Simple Sidebar (http://startbootstrap.com/template-overviews/simple-sidebar)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+
+body {
+    overflow-x: hidden;
+}
+
+h1, h2 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+h3 {
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.5;
+}
+a {
+    font-family: 'Nunito', sans-serif;
+}
+
+h4, p {
+    font-family: 'Lora', serif;
+}
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #f9f9f9;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 20px;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #666666;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #666666;
+    background: none;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 0;
+    }
+    #wrapper.toggled {
+        padding-left: 250px;
+    }
+    #sidebar-wrapper {
+        width: 0;
+    }
+    #wrapper.toggled #sidebar-wrapper {
+        width: 250px;
+    }
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+
+    }
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+#sidebar-name {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 50px;
+    font-family: 'Nunito', sans-serif;
+}
+
+h1.page-title {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.sociali {
+    text-indent: 0;
+    margin-right: 0;
+}
+
+.fa-stack {
+    width: 1.5em !important;
+    height: 1.5em !important;
+    line-height: 1 !important;
+}
+
+.post-preview {
+    margin-top: 3rem;
+}
+.post-preview > a {
+  color: #333333; }
+.post-preview > a:focus, .post-preview > a:hover {
+    text-decoration: none;
+    color: #0085A1; }
+.post-preview > a > .post-title {
+    font-size: 2.5rem;
+    margin-top: 3rem;
+    margin-bottom: 10px;
+    font-weight: bold; }
+.post-preview > a > .post-subtitle {
+    margin: 0 0 10px;
+    font-size:1.5rem; }
+
+.post-preview > .post-meta {
+  font-size: 1rem;
+  margin-top: 0;
+  color: #777777; }
+.post-preview > .post-meta > a {
+    text-decoration: none;
+    color: #333333; }
+.post-preview > .post-meta > a:focus, .post-preview > .post-meta > a:hover {
+      text-decoration: underline;
+      color: #0085A1; }
+
+@media only screen and (min-width: 768px) {
+  .post-preview > a > .post-title {
+    font-size: 2.5rem; } }
+
+
+.page-header > h1 {
+    margin-top: 3rem;
+    font-weight: bold;
+    /* text-transform: uppercase; */
+    color: #777;
+    font-size: 1.5rem;
+    line-height: 1 !important;
+}
+
+.page-header > h1 > a {
+    color: #0085A1;
+}
+
+
+.active-page > a {
+    font-weight: bold;
+    color: #0085A1 !important;
+}
+
+.square {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.card-body > .card-title > a {
+    color: #333333;
+}
+
+.card-title > a:focus, .card-title > a:hover {
+    text-decoration: none;
+    color: #0085A1;
+}
+
+.pagination {
+  margin-bottom: 30px;
+}
+.subheading {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.1;
+    display: block;
+    margin: 10px 0 0;
+}
+.meta {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #777777;
+}
+
+article {
+    padding: 20px;
+}
+
+article p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+article h2 {
+    margin-top: 2rem;
+}
+
+.post-heading {
+    margin-top: 2rem;
+}
+
+.post-subheading {
+    font-size: 1.7rem;
+}

@@ -1,0 +1,24 @@
+extends layout.pug
+
+block link
+	-var selected = 'writing';
+block content
+	.col-lg-10.col-md-11
+		.page-header
+			h1
+				| Writings on 
+				a(href='https://github.com/pierredepaz/politics-of-code') Politics of Code
+		hr
+		.post-heading
+			h1= title
+			h2.subheading= subtitle
+			p.meta= date
+
+block article
+	article
+		.container
+			.row
+				.col-lg-8.col-md-10
+					each line in text.split(/\n/)
+						p= line
+						br

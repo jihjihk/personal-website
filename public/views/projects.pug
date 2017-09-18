@@ -1,0 +1,22 @@
+extends layout.pug
+
+block link
+	-var selected = 'projects';
+
+block content
+	.col-md-12.ml-3
+		.page-header
+			h1
+				| Projects on 
+				a(href='https://github.com/pierredepaz/politics-of-code') Politics of Code
+		hr
+		.row
+			each project in allProjects
+				.col-lg-6.square
+					.card.h-100
+						a(href= '/projects/' + project.week)
+							img.card-img-top(src= project.image)
+						.card-body
+							h2.card-title
+								a(href= '/projects/' + project.week)= project.title
+							p.card-text= project.subtitle
