@@ -2,6 +2,7 @@ var express = require('express');
 var path = require('path');
 var app = express()
 var fs = require('fs');
+var favicon = require('serve-favicon');
 var firstline = require('firstline');
 var time = new Date();
 var allWriting = require('./public/text/writing-posts.json');
@@ -9,6 +10,8 @@ var allProjects = require('./public/text/project-posts.json');
 
 app.set("view engine", "pug");
 app.set("views", path.join(__dirname, "public/views"));
+
+app.use(favicon(path.join(__dirname, "public", 'favicon.ico')));
 
 app.listen(process.env.PORT || 8005, function() {
 	console.log("We have started the server");
