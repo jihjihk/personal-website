@@ -1,4 +1,4 @@
-<h4><a href="https://mytorchtech.herokuapp.com">mytorch.tech</a></h4>
+<h4><a href=\"https://mytorchtech.herokuapp.com\">mytorch.tech</a></h4>
 
 <p>For this project, Gabor, Melinda and I have built a campus safety web app that makes asking for help easy. It is a Node.js based web app that is open to any NYU students to use.</p>
 
@@ -19,31 +19,30 @@
 <h2>Solution</h2>
 <p>To address these problems, we decided to build a web app that authenticates any NYU student to easily call public safety, residential assistants, or their friends within the website and without a phone. We wanted to differentiate between different levels of dangers and risky situations to lower the barrier of asking for help. We also enabled anonymous reporting to allow any bystander to report the incident without fearing retaliation. Having this as a web app that can easily change authentication details (eg. from NYU Abu Dhabi to Carnegie Mellon) allows it to extend across college campuses.</p>
 
-<h2>Building the App</h2>
-<h3>Front-end</h3>
+<h2>Front-end</h2>
 <p>The front-end uses pug as a templating engine and Bootstrap and jQuery as auxiliary libraries. The key focus was on making each button as readable and accessible as possible while differentiating between risk of situations by color and text.</p>
 
 <p>The initial landing page after login has one text field that gets the current location and passes it onto /emergency or /danger routes. This location data is received so that </p>
 
-<h3>Functionalities</h3>
+<h2>Back-end</h2>
 <p>We used Express.js to create the server. Gabor was in charge of user authentication API using Google email. Using the Twillio API, we pass the location data from the GET request and use to form the text body when sending texts to Public Safety, RAs or friends.</p>
 
-<h4>Emergency</h4>
+<h3>Emergency</h3>
 <p>Emergency is categorized as a high-risk situation that requires immediate help from the public safety. After the location from /home is submitted and initial help is requested via Twillio API text, the user is re-routed to /emergency which also contains a simple incident reporting form. This form is submitted via POST request to ensure as much detail is reserved and reported at the spot.</p>
 
-<h4>Danger</h4>
+<h3>Danger</h3>
 <p>Danger is categorized as less severe yet potentially risky situation that the user or a bystander would like to de-escalate by asking for the RAs' or friends' help. When the user submits location data and is re-routed to /danger page, the user can specify whom they would like to call and what danger they are in.</p>
 
-<h4>Tips</h4>
+<h3>Tips</h3>
 <p>This page includes basic first aid responses for different situations. I got this information from online so they may not be specific to local laws or reporting system. Regardless most details would be useful for first aid.</p>
 
-<h4>Settings</h4>
+<h3>Settings</h3>
 <p>This page allows a user to specify which 3 friends they would like to contact when in danger. The form asks for both email and phone number in case a friend doesn't own a local phone number but still can be contacted via email.</p>
 
-<h3>Moving Forward</h3>
+<h2>Moving Forward</h2>
 <p>What we have so far is a still a prototype and still has multiple limits. There are multiple assumptions made and to be tested as well.</p>
 
-<h4>Limitations and Improvements</h4>
+<h3>Limitations and Improvements</h3>
 <ul>
 	<li>anonymous reporting may result in subjective or inaccurate victims and offenders</li>
 	<li>help not arriving on time</li>
@@ -54,7 +53,7 @@
 	<li>NYUAD specific help and guidelines</li>
 </ul>
 
-<h4>Assumptions to test</h4>
+<h3>Assumptions to test</h3>
 <ul>
 	<li>anonymous reporting helps with timely reporting?</li>
 	<li>a website is be easier to use than a phone</li>
@@ -62,5 +61,5 @@
 	<li>RAs and friends can adequately address an escalated situation.</li>
 </ul>
 
-<h3>Conclusion</h3>
+<h2>Conclusion</h2>
 <p>Overall, I am happy with the flow of the app and its potential benefits for the student body. Navigating the differences in personal beliefs and local legal system can be difficult. Rather than turning a blind eye to the situation and only emphasizing abstinence, the admin and the student body can focus on better education and realistic training to prevent serious threats and risks to this community's safety.</p>
