@@ -22,6 +22,10 @@ a {
     font-family: 'Nunito', sans-serif;
 }
 
+a.intext {
+    font-family: 'Lora', serif !important; 
+}
+
 h4, p, li, ul {
     font-family: 'Lora', serif;
 }
