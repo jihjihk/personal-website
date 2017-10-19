@@ -14,10 +14,16 @@ h1, h2 {
     line-height: 1.5;
 }
 
-h3 {
+h3, h4 {
     font-family: 'Nunito', sans-serif;
     line-height: 1.5;
 }
+
+h4 {
+    font-size: 1.2;
+    font-weight: bold;
+}
+
 a {
     font-family: 'Nunito', sans-serif;
 }
@@ -26,8 +32,10 @@ a.intext {
     font-family: 'Lora', serif !important; 
 }
 
-h4, p, li, ul {
+p, li, ul {
     font-family: 'Lora', serif;
+    font-size: 1.2rem;
+    line-height: 1.8;
 }
 
 #wrapper {
