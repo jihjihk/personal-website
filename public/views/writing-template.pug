@@ -19,6 +19,8 @@ block article
 		.container
 			.row
 				.col-lg-8.col-md-10
-					each line in text.split(/\n/)
+					p !{text}
+
+					//each line in text.split(/\n/)
 						p= line
 						br
