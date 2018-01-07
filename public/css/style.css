@@ -3,9 +3,56 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
  */
+html {
+  position: relative;
+  min-height: 100%;
+}
 
 body {
     overflow-x: hidden;
+    margin-bottom: 2rem;
+}
+
+.header {
+  padding: 1rem;
+  margin-bottom: 0rem !important;
+  /*border-bottom: .05rem solid #e5e5e5;*/
+}
+
+.footer {
+    padding-top:1rem;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 2rem;
+    line-height: 2rem; /* Vertically center the text there */
+}
+.footer-ul {
+    padding-top: 2rem;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+
+a {
+    color: #888;
+}
+
+@media screen and (min-width: 48em) {
+  /* Remove the padding we set earlier */
+  .header {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 2rem;
+  }
+
 }
 
 h1, h2 {
@@ -114,17 +161,17 @@ p, li, ul {
     text-decoration: none;
 }
 
-.sidebar-nav > .sidebar-brand {
+.nav {
     height: 65px;
     font-size: 18px;
     line-height: 60px;
 }
 
-.sidebar-nav > .sidebar-brand a {
+.nav a {
     color: #999999;
 }
 
-.sidebar-nav > .sidebar-brand a:hover {
+.nav a:hover {
     color: #666666;
     background: none;
 }
@@ -153,11 +200,12 @@ p, li, ul {
     }
 }
 
-#sidebar-name {
+#header-name {
     font-weight: bold;
-    font-size: 1.5rem;
-    margin-top: 50px;
+    font-size: 1.75rem;
+    margin-top: 2rem;
     font-family: 'Nunito', sans-serif;
+    text-align: center;
 }
 
 h1.page-title {
@@ -209,7 +257,7 @@ h1.page-title {
 
 
 .page-header > h1 {
-    margin-top: 3rem;
+    margin-top: 2rem;
     font-weight: bold;
     /* text-transform: uppercase; */
     color: #777;
@@ -221,10 +269,14 @@ h1.page-title {
     color: #0085A1;
 }
 
+.nav-link {
+    border-bottom: .25rem solid transparent;
+}
 
-.active-page > a {
+.active-page {
     font-weight: bold;
     color: #0085A1 !important;
+    border-bottom-color: #0085A1;
 }
 
 .square {

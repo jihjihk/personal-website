@@ -1,8 +1,8 @@
 doctype html
 html(lang='en')
 	block link
-		-var selected = 'home';
-	-var menu = {'home' : '/', 'writing' : '/writing', 'projects': '/projects', 'about': '/about'};
+		-var selected = 'Home';
+	-var menu = {'Home' : '/', 'About': '/about', 'Writing' : '/writing', 'Projects': '/projects'};
 
 	head
 		meta(charset='utf-8')
@@ -20,35 +20,39 @@ html(lang='en')
 		link(rel='shortcut icon' href='../favicon.ico')
 
 	body
-		#wrapper.toggled
-			// Sidebar
-			#sidebar-wrapper
-				ul.sidebar-nav.mt-5
-					each val, key in menu
+		.container
+			header.header.clearfix
+				h3#header-name.sidebar-brand Jihyun Kim
+
+				nav
+					ul.nav.justify-content-center
+						each val, key in menu
 							if selected === key
-								li.active-page
-									a(href=val, title=key)= key
+								li.nav-item
+									a.nav-link.active-page(href=val, title=key)= key
 							else
-								li
-									a(href=val, title=key)= key
-
-					li.sidebar-brand
-						a#sidebar-name(href='/')
-							| Jihyun Kim
-					li.list-inline-item.ml-3
-						a.sociali(href='https://twitter.com/jihjihk')
-							span.fa-stack.fa-lg
-								i.fa.fa-twitter.fa-stack-1x
-					li.list-inline-item
-						a.sociali(href='https://github.com/jihjihk')
-							span.fa-stack.fa-lg
-								i.fa.fa-github.fa-stack-1x
-
-			#page-content-wrapper
+								li.nav-item
+									a.nav-link(href=val, title=key)= key
+			main(role='main')
 				.container
 					.row
 						block content
-			block article
+					block article
+
+			footer.footer
+				.container
+					ul.nav.justify-content-center.footer-ul
+						li.list-inline-item.ml-3
+							a.sociali(href='https://twitter.com/jihjihk')
+								span.fa-stack.fa-lg
+									i.fa.fa-twitter.fa-stack-1x
+						li.list-inline-item
+							a.sociali(href='https://github.com/jihjihk')
+								span.fa-stack.fa-lg
+									i.fa.fa-github.fa-stack-1x
+
+
+		
 
 		script(src='vendor/jquery.min.js')
 		script(src='vendor/bootstrap.min.js')

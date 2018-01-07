@@ -1,10 +1,11 @@
 extends layout.pug
 
 block link
-  -var selected = 'writing'
+  -var selected = 'Writing'
 
 block content
-  .col-lg-10.col-md-11.ml-3
+  .col
+  .col-lg-9.col-md-10.col-xs-12.mr-auto
     .page-header
       h1
         | Writings on 
@@ -16,3 +17,4 @@ block content
           h2.post-title= writing.title
           h3.post-subtitle= writing.subtitle
         p.post-meta= writing.date
+  .col
