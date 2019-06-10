@@ -231,7 +231,8 @@ h1.page-title {
   color: #333333; }
 .post-preview > a:focus, .post-preview > a:hover {
     text-decoration: none;
-    color: #007bff; }
+    color: #007bffa1; 
+}
 .post-preview > a > .post-title {
     font-size: 2.5rem;
     margin-top: 3rem;
@@ -250,7 +251,7 @@ h1.page-title {
     color: #333333; }
 .post-preview > .post-meta > a:focus, .post-preview > .post-meta > a:hover {
       text-decoration: underline;
-      color: #007bff; }
+      color: #007bffa1; }
 
 @media only screen and (min-width: 768px) {
   .post-preview > a > .post-title {
@@ -287,10 +288,9 @@ h1.page-title {
 .card-body > .card-title > a {
     color: #333333;
 }
-
 .card-title > a:focus, .card-title > a:hover {
     text-decoration: none;
-    color: #007bff;
+    color: #007bffa1;
 }
 
 .pagination {
@@ -338,6 +338,7 @@ article h2 {
 .icon-line a {
     font-size: 2rem;
     margin: 1rem;
+    color: #007bff !important;
 }
 
 .profile-pic {
