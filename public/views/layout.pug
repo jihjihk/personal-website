@@ -2,7 +2,7 @@ doctype html
 html(lang='en')
 	block link
 		-var selected = 'Home';
-	-var menu = {'Home' : '/', 'About': '/about', 'Writing' : '/writing', 'Projects': '/projects'};
+	-var menu = {'Home' : '/', 'Writing' : '/writing', 'Projects': '/projects'};
 
 	head
 		meta(charset='utf-8')
@@ -16,13 +16,13 @@ html(lang='en')
 		link(href='../css/style.css', rel='stylesheet')
 		link(href='https://fonts.googleapis.com/css?family=Nunito:300,400,700|Open+Sans:400,700', rel='stylesheet')
 		link(href='https://fonts.googleapis.com/css?family=Lora:400,700', rel='stylesheet')
-		link(rel='stylesheet', href='https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css')
+		link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css", rel='stylesheet', type='text/css')
 		link(rel='shortcut icon' href='../favicon.ico')
 
 	body
 		.container
 			header.header.clearfix
-				h3#header-name.sidebar-brand Jihyun Kim
+				h1#header-name.sidebar-brand jihjihk
 
 				nav
 					ul.nav.justify-content-center
@@ -41,18 +41,6 @@ html(lang='en')
 
 			footer.footer
 				.container
-					ul.nav.justify-content-center.footer-ul
-						li.list-inline-item.ml-3
-							a.sociali(href='https://twitter.com/jihjihk')
-								span.fa-stack.fa-lg
-									i.fa.fa-twitter.fa-stack-1x
-						li.list-inline-item
-							a.sociali(href='https://github.com/jihjihk')
-								span.fa-stack.fa-lg
-									i.fa.fa-github.fa-stack-1x
-
-
-		
 
 		script(src='vendor/jquery.min.js')
 		script(src='vendor/bootstrap.min.js')

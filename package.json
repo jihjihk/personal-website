@@ -4,10 +4,13 @@
   "description": "so cool!!",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.15.4",
+    "express": "^4.17.1",
     "firstline": "^1.2.1",
-    "pug": "^2.0.0-rc.4",
-    "serve-favicon": "^2.4.4"
+    "gulp": "^4.0.2",
+    "gulp-pug": "^4.0.1",
+    "gulp-watch": "^5.0.1",
+    "pug": "^2.0.3",
+    "serve-favicon": "^2.5.0"
   },
   "devDependencies": {},
   "engines": {
