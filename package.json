@@ -4,7 +4,7 @@
   "description": "so cool!!",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "firstline": "^1.2.1",
     "gulp": "^4.0.2",
     "gulp-pug": "^4.0.1",
